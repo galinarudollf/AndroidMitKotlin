@@ -4,6 +4,7 @@ author:   Galina Rudolf
 email:    galina.rudolf@informatik.tu-freiberg.de
 
 logo:     https://upload.wikimedia.org/wikipedia/commons/c/cb/Kotlin_vs_java.jpg
+
 version:  0.0.1
 
 language: de
@@ -18,53 +19,61 @@ translation: Deutsch  translations/German.md
 
 # **<font color=red>Android meets Kotlin (oder Android mit Kotlin)</font>**
 
+
 ## Motivation
 
+
 ### Gibt es eine Welt ohne Smartphone?
-{{1-2}}
-![Smartphone](images/Bild1.jpg)<!--style="width:75%"-->
 
-{{1-2}}
+                        {{1-2}}
+*************************************************************
+![Smartphone](https://github.com/galinarudollf/AndroidMitKotlin/blob/master/images/Bild1.jpg?raw=true "Quelle")<!--style="width:75%"-->
+
 [Quelle: rawpixel.com](https://www.rawpixel.com)
+*************************************************************
 
-{{2}}
+
+                        {{2}}
+*************************************************************
 Vielleicht ein besserer Beweis:
 
-{{2}}
-![Smartphone-Statistik](images/anzahl-der-nutzer-von-smartphones-in-deutschland-bis-2019.png)<!--style="width:75%"-->
+![Smartphone-Statistik](https://github.com/galinarudollf/AndroidMitKotlin/blob/master/images/anzahl-der-nutzer-von-smartphones-in-deutschland-bis-2019.png?raw=true)<!--style="width:75%"-->
 
-{{2}}
 [Quelle: Statista](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)
+*************************************************************
+
 
 ### Warum Android?
 
 + Betriebssystem für mobile Geräte wie Smartphones, Netbooks …
 
   > Wikipedia: Android hatte als Smartphone-Betriebssystem im dritten Quartal 2016
-  > einen weltweiten Marktanteil von 87,5 Prozent (nach Verkaufszahlen).
+  > einen weltweiten Marktanteil von 87,5 Prozent (nach Verkaufszahlen).
 
-+ und Software-Plattform , d.h. erlaubt die Entwicklung von Anwendungen
++ und Software-Plattform, {1}{d.h. erlaubt die Entwicklung von Anwendungen}
 
 
-     {{1}}
+     {{2}}
 Entwicklungssprachen: Java und Kotlin
 
-     {{2-3}}
+     {{3-4}}
+*************************************************************
 *Java und Kotlin sind beide <font color=red size=5>Inseln</font>.*
 
-     {{2-3}}
-![Insel Kotlin](images/Bild2.jpg)<!--style="width:75%" -->
+![Insel Kotlin](https://github.com/galinarudollf/AndroidMitKotlin/blob/master/images/Bild2.jpg?raw=true)<!--style="width:50%" -->
+*************************************************************
 
-     {{3}}
+     {{4}}
 **Java und Kotlin sind beide moderne platformübergreifende objektorientierte <font color=red size=5>Programmiersprachen</font>.**
+
 
 ### Warum mit Kotlin?
 
-+ eine plattformübergreifende  Programmiersprache
-+ kann in Bytecode für die Java Virtual Machine (JVM) übersetzt werden, aber
++ eine plattformübergreifende  Programmiersprache
++ kann in Bytecode für die Java Virtual Machine (JVM) übersetzt werden, aber
   nicht nur
-+ lässt sich zur Entwicklung von Android-Apps verwenden und wird seit 2017
-  offiziell von Google unterstützt, seit 2019 empfohlene Programmiersprache
++ lässt sich zur Entwicklung von Android-Apps verwenden und wird seit 2017
+  offiziell von Google unterstützt, seit 2019 empfohlene Programmiersprache
 + Eine moderne Programmiersprache mit interessanten Konzepten
 + syntaktisch nicht zu Java kompatibel, kann aber mit Java-Code interoperieren
 + nutzt Java Class Library (JCL)
@@ -72,8 +81,10 @@ Entwicklungssprachen: Java und Kotlin
 
 ## Mehr über Android
 
+
 ### Android-Architektur
-![Android-Architektur](images/Bild3.png)<!--style="width:75%"-->
+
+![Android-Architektur](https://github.com/galinarudollf/AndroidMitKotlin/blob/master/images/Bild3.png?raw=true)<!--style="width:100%; max-width: 800px"-->
 
 Quelle: Universität Trier, Bernhard Baltes-Götz, Einführung in die Entwicklung
 von Apps für Android 8
@@ -133,21 +144,21 @@ style=" width: 30%;
 |   .apk                     |
 +----------------------------+
 ````
-![Build-Prozess](images/Bild4.png)<!--style="width:60%"-->
+![Build-Prozess](https://github.com/galinarudollf/AndroidMitKotlin/blob/master/images/Bild4.png?raw=true)<!--style="width:60%"-->
 
 [Quelle: https://developer.android.com/studio/build](https://developer.android.com/studio/build)
 
 </div>
 
 
-### Was ist eine Komponente welche und wie viele gibt es in einer App?
+### Was ist eine Komponente, welche und wie viele gibt es in einer App?
 
-![Android-Komponenten](images/Bild5.jpg)<!--style="width:60%"-->
+![Android-Komponenten](https://github.com/galinarudollf/AndroidMitKotlin/blob/master/images/Bild5.jpg?raw=true)<!--style="width:60%"-->
 
 [Quelle: https://www.edumobile.org](https://www.edumobile.org)
 
     {{1-2}}
-**Activity (Aktivität):** präsentiert eine Bildschirmseite mit Bedienelementen.  
+**Activity (Aktivität):** präsentiert eine Bildschirmseite mit Bedienelementen.  
 
     {{2-3}}
 **Service (Dienst):** führt Aufgaben im Hintergrund aus und hat keine Bedienoberfläche. Er kann von einer anderen Anwendungskomponente gestartet oder gebunden werden
@@ -161,7 +172,33 @@ style=" width: 30%;
     {{5}}
 und über Intents sprechen wir später
 
+## Kotlin
+
+### Datentypen
+
+Nummerische Datentypen
+
+Quelle: [https://kotlinlang.org/docs/reference/basic-types.html](https://kotlinlang.org/docs/reference/basic-types.html)
+
+{{1-2}}
+*************************************************************
+Ganze Zahlen
+
+<!-- data-type="none" -->
+| Type    | Size (bits) | Min value | Max value  |
+|:------- |:----------- |:--------- |:---------- |
+| `Byte`  | $8$         | $-128$    | $127$      |
+| `Short` | $16$        | $-32768$  | $32767$    |
+| `Int`   | $32$        | $-2^{31}$ | $2^{31}-1$ |
+| `Long`  | $64$        | $-2^{63}$ | $2^{63}-1$ |
+ *************************************************************
+
+    {{2}}
+Fließkommazahlen
+
+
 ## Literatur
+
 https://developer.android.com/guide/
 
 https://developer.android.com/kotlin/
@@ -174,7 +211,10 @@ http://helmbold.de/artikel/java-kotlin/
 
 https://developer.android.com/kotlin/
 
+
 ## Ausserhalb des Tellerrandes
+
+
 ### Boolesche Funktion
 
 > Eine Boolesche Funktion (auch logische Funktion) ist eine mathematische Funktion
@@ -210,11 +250,10 @@ $$
 
 <!--style="color: red"-->Beispiel:
 
-Formel vertikal mittig ausrichten?
-
 <div>
 <!--
 style=" width: 49%;
+        max-width: 200px;
         float: right;"
 -->
 ````ascii
@@ -238,6 +277,13 @@ $$
 
 ### Chemische Formeln
 
+{|>}{was müssen wir darüber wissen?}
+
+    --{{1}}--
+Eine chemische Formel beschreibt die Zusammensetzung chemischer Verbindungen.
+
+#### Formelschreibweisen
+
 + Verhältnisformel
 + Summenformel
 + Strukturformel
@@ -245,8 +291,10 @@ $$
 
 Beispiele:
 
+<div>
 <!--
-style=" width: 30%;
+style=" width: 49%;
+        max-width: 200px;
         float: right;"
 -->
 ````ascii
@@ -256,161 +304,44 @@ H - C - H
     |
     H
 ````
-
+<!--
+style=" width: 49%;
+        float: left;"
+-->
 $$CH_4$$
+</div>
 
+## Was alle interessiert
 
+Luftemperatur am 21.9.2020 in Dresden/Klotzsche
 
-## Markdown
+| # Messung | Temperatur |
+| ---------:| ----------:|
+|         0 |    14.1 C° |
+|         1 |    13.4 C° |
+|         2 |    12.6 C° |
+|         3 |    10.9 C° |
+|         4 |    10.1 C° |
+|         5 |    10.1 C° |
+|         6 |     9.7 C° |
+|         7 |    10.3 C° |
+|         8 |    12.9 C° |
+|         9 |    14.5 C° |
+|        10 |    17.7 C° |
+|        11 |    20.3 C° |
+|        12 |    21.6 C° |
+|        13 |    22.3 C° |
+|        14 |    23.1 C° |
 
-You can use common [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax to create your course, such as:
+Quelle: [https://meteostat.net](https://meteostat.net)
 
-1. Lists
-2. ordered or
+## Und zu guter Letzt
 
-   * unordered
-   * ones ...
+Zwei Informatiker-Witze:
 
++ Es gibt genau 10 Typen von Menschen. Solche, die Binärzahlen verstehen und solche, die es nicht tun.
++ PnP = Plug'n'Pray
 
-| Header 1   | Header 2   |
-| :--------- | :--------- |
-| Item 1     | Item 2     |
+Wer sie nicht versteht, kann sie sich im folgenden Video erklären lassen:
 
-
-Images:
-
-![images](https://farm2.static.flickr.com/1618/26701766821_7bea494826.jpg)
-
-
-### Extensions
-
-     --{{0}}--
-But you can also include other features such as spoken text.
-
-      --{{1}}--
-Insert any kind of audio file:
-
-       {{1}}
-?[audio](https://bigsoundbank.com/UPLOAD/mp3/1068.mp3)
-
-
-     --{{2}}--
-Even videos or change the language completely.
-
-       {{2-3}}
-!?[video](https://www.youtube.com/embed/bICfKRyKTwE)
-
-
-      --{{3 Russian Female}}--
-Первоначально создан в 2004 году Джоном Грубером (англ. John Gruber) и Аароном
-Шварцем. Многие идеи языка были позаимствованы из существующих соглашений по
-разметке текста в электронных письмах...
-
-
-    {{3}}
-Type "voice" to see a list of all available languages.
-
-
-### Styling
-
-<!-- class = "animated rollIn" style = "animation-delay: 2s; color: purple" -->
-The whole text-block should appear in purple color and with a wobbling effect.
-Which is a **bad** example, please use it with caution ...
-~~ only this is red ;-) ~~ <!-- class = "animated infinite bounce" style = "color: red;" -->
-
-## Charts
-
-Use ASCII-Art to draw diagrams:
-
-                                    Multiline
-    1.9 |    DOTS
-        |                 ***
-      y |               *     *
-      - | r r r r r r r*r r r r*r r r r r r r
-      a |             *         *
-      x |            *           *
-      i | B B B B B * B B B B B B * B B B B B
-      s |         *                 *
-        | *  * *                       * *  *
-     -1 +------------------------------------
-        0              x-axis               1
-
-## Quizzes
-
-### A Textquiz
-
-What did the **fish** say when he hit a **concrete wall**?
-
-    [[dam]]
-
-### Multiple Choice
-
-Just add as many points as you wish:
-
-    [[X]] Only the **X** marks the correct point.
-    [[ ]] Empty ones are wrong.
-    [[X]] ...
-
-### Single Choice
-
-Just add as many points as you wish:
-
-    [( )] ...
-    [(X)] <-- Only the **X** is allowed.
-    [( )] ...
-
-## Executable Code
-
-A drawing example, for demonstrating that any JavaScript library can be used, also for drawing.
-
-```javascript
-// Initialize a Line chart in the container with the ID chart1
-new Chartist.Line('#chart1', {
-  labels: [1, 2, 3, 4],
-  series: [[100, 120, 180, 200]]
-});
-
-// Initialize a Line chart in the container with the ID chart2
-new Chartist.Bar('#chart2', {
-  labels: [1, 2, 3, 4],
-  series: [[5, 2, 8, 3]]
-});
-```
-<script>@input</script>
-
-<div class="ct-chart ct-golden-section" id="chart1"></div>
-<div class="ct-chart ct-golden-section" id="chart2"></div>
-
-
-### Projects
-
-You can make your code executable and define projects:
-
-``` js     -EvalScript.js
-let who = data.first_name + " " + data.last_name;
-
-if(data.online) {
-  who + " is online"; }
-else {
-  who + " is NOT online"; }
-```
-``` json    +Data.json
-{
-  "first_name" :  "Sammy",
-  "last_name"  :  "Shark",
-  "online"     :  true
-}
-```
-<script>
-  // insert the JSON dataset into the local variable data
-  let data = @input(1);
-
-  // eval the script that uses this dataset
-  eval(`@input(0)`);
-</script>
-
-## More
-
-Find out what you can even do more with quizzes:
-
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md
+!?[IT- und Programmierer-Witze erklärt](https://www.youtube.com/watch?v=w2PNEBw1V_s)
